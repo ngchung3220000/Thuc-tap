@@ -11,13 +11,13 @@ import "../styles/nprogress.css";
 import { loadProgressBar } from "axios-progress-bar";
 
 import routes from "./RootRoutes";
-import { Store } from "./redux/Store";
 import Auth from "./auth/Auth";
 import EgretLayout from "./EgretLayout/EgretLayout";
 import AuthGuard from "./auth/AuthGuard";
 import axios from "axios";
 import { toast } from "react-toastify";
 import ConstantList from "../app/appConfig";
+import { Store } from "./exerciseL2/redux/Store";
 
 
 // import UserService from "./services/UserService";

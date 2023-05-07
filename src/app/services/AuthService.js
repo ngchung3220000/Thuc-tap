@@ -1,4 +1,4 @@
-import { Store } from '../redux/Store';
+import { Store } from '../component/redux/Store';
 
 export const signin = (data) => {
     return new Promise((resolve, reject) => {

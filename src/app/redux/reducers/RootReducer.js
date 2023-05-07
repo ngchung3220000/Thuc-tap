@@ -5,10 +5,10 @@ import LayoutReducer from "./LayoutReducer";
 import ScrumBoardReducer from "./ScrumBoardReducer";
 import NotificationReducer from "./NotificationReducer";
 import EcommerceReducer from "./EcommerceReducer";
-import employeeSlice from "../.././component/redux/Slices/employeeSlice";
+import EmployeeReducer from "app/exerciseL2/redux/Reducers/EmployeeReducer";
 
 const RootReducer = combineReducers({
-  employee: employeeSlice,
+  employee: EmployeeReducer,
   login: LoginReducer,
   user: UserReducer,
   layout: LayoutReducer,

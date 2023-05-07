@@ -10,8 +10,8 @@ module.exports = Object.freeze({
   // API_ENPOINT:"http://globits.net:8090/pi",//eqa
   API_ENPOINT: "http://training-api.oceantech.com.vn/cms",
   AUTH_MODE: "Spring", //"Spring" or "Keycloak"
-  // LOGIN_PAGE: APPLICATION_PATH + "session/signin", //Nếu là Spring
-  // HOME_PAGE: APPLICATION_PATH + "dashboard/analytics", //Nếu là Spring
+  LOGIN_PAGE: APPLICATION_PATH + "session/signin", //Nếu là Spring
+  HOME_PAGE: APPLICATION_PATH + "dashboard/analytics", //Nếu là Spring
   CHECK_HEALTH_ORG: CHECK_HEALTH_ORG,
   CHECK_ERROR_RESULT: CHECK_ERROR_RESULT,
   // HOME_PAGE:APPLICATION_PATH+"dashboard/learning-management"//Nếu là Keycloak

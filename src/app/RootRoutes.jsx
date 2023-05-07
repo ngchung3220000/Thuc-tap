@@ -9,16 +9,15 @@ import departmentRoutes from "./views/Department/DepartmentRoutes";
 import ConstantList from "./appConfig";
 import pageLayoutRoutes from "./views/page-layouts/PageLayoutRoutees";
 import MenuRoutes from "./views/Menus/MenuRoutes";
-
-import Employee from "./component/Employee/EmployeeRoutes";
-import Province from "./component/Address/Province/ProvinceRoutes";
-import District from "./component/Address/District/DistrictRoutes";
-import WardRoutes from "./component/Address/Ward/WardRoutes";
-
 import ShiftWorkRouters from "./views/ShiftWork/ShiftWorkRouters";
 import TimeSheetRoutes from "./views/TimeSheet/TimeSheetRoutes";
 import ColorRoutes from "./views/Color/ColorRoutes";
 import CategoryRoutes from "./views/Category/CategoryRoutes";
+
+import EmployeeRoutes from "./exerciseL2/components/Employee/EmployeeRoutes";
+import ProvinceRoutes from "./exerciseL2/components/Address/Province/ProvinceRoutes";
+import DistrictRoutes from "./exerciseL2/components/Address/District/DistrictRoutes";
+import WardRoutes from "./exerciseL2/components/Address/Ward/WardRoutes";
 
 const redirectRoute = [
   {
@@ -35,21 +34,21 @@ const errorRoute = [
 ];
 
 const routes = [
-  // ...sessionRoutes,
-  // ...dashboardRoutes,
+  ...sessionRoutes,
+  ...dashboardRoutes,
   // ...TimeSheetRoutes,
-  // ...administrativeUnitRoutes,
+  ...administrativeUnitRoutes,
   // ...departmentRoutes,
-  // ...pageLayoutRoutes,
+  ...pageLayoutRoutes,
   // ...MenuRoutes,
-  ...Employee,
-  ...Province,
+  ...EmployeeRoutes,
+  ...ProvinceRoutes,
   ...WardRoutes,
-  ...District,
-  // ...UserRoutes,
+  ...DistrictRoutes,
+  ...UserRoutes,
   // ...ShiftWorkRouters,
   // ...ColorRoutes,
-  // ...CategoryRoutes,
+  ...CategoryRoutes,
   // ...errorRoute,
 ];
 
